@@ -1,2 +1,2 @@
 # ProjectEuler
-Solutions of problems from projecteuler.net
+Solutions to problems of projecteuler.net
