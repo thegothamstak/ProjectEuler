@@ -25,7 +25,7 @@ def checkPrime(n):
 no = 3
 prime_no = 2
 while(no < int(600851475143/2) + 1):
-    print(no)
+    #print(no)
     #Checked if the number is a factor of 600851475143 and is a prime number
     if(600851475143%no == 0):
         if(checkPrime(no)):
