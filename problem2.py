@@ -7,13 +7,23 @@
     Author : thegothamstak
     Date : 2nd April 2018
 '''
+#To calculate the time taken
+import time
+
+start = time.time()
+
+#Initializing fibonacci series
 term1 = 0
 term2 = 1
 sum = 0
 while(term2 < 4000000):
-    if(term2%2 == 0):
+    if(term2%2 == 0):       #If this term in fibonacci series is even valued, it will be added to the sum
         sum = sum + term2
     temp = term2
     term2 = term1 + term2
     term1 = temp
-print(sum)
+
+time_taken = time.time() - start
+
+print('Sum of even valued terms in fibonacci series below 4 million is : '+str(sum))
+print('Time taken in seconds : '+str(time_taken))

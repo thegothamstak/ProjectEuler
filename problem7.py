@@ -4,6 +4,10 @@
     Author : thegothamstak
     Date : 3rd April 2018
 '''
+#To calculate the time taken
+import time
+start = time.time()
+
 #Function that will check whether a number is prime or not
 def checkPrime(n):
     if(n%2 == 0):
@@ -25,4 +29,8 @@ while(prime_count < 10001):
         prime_count += 1
         print(str(prime_no)+' at '+str(prime_count))
     no += 2
+
+time_taken = time.time() - start
+
 print('10001st Prime number is : '+str(prime_no))
+print('Time taken in seconds : '+str(time_taken))

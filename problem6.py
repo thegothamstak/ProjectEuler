@@ -9,6 +9,10 @@
     Author : thegothamstak
     Date : 3rd April 2018
 '''
+#To calculate the time taken
+import time
+start = time.time()
+
 #Function that finds the sum of the squares of the first n natural numbers
 def sumSquare(n):
     return int((n * (n + 1) * ((2 * n) + 1))/6)
@@ -21,4 +25,7 @@ def squareSum(n):
     return sum * sum
 
 #Prints the subtraction
-print(squareSum(100) - sumSquare(100))
+print('Difference between the sum of the squares of the first one hundred natural numbers and the square of the sum : '+str(squareSum(100) - sumSquare(100)))
+
+time_taken = time.time() - start
+print('Time taken in seconds : '+str(time_taken))

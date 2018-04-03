@@ -5,10 +5,16 @@
     Author : thegothamstak
     Date : 2nd April 2018
 '''
+#To calculate the time taken
+import time
+
+start = time.time()
 sum = 0
 for i in range(1000):
     if(i%3 == 0 or i%5 == 0):
-        print(i)
         sum = sum + i
 
-print(sum)
+time_taken = time.time() - start
+
+print('Sum of all multiples of 3 or 5 below 100 is : '+str(sum))
+print('Time taken in seconds : '+str(time_taken))

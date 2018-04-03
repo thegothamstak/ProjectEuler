@@ -5,6 +5,11 @@
     Author : thegothamstak
     Date : 2nd April 2018
 '''
+#To calculate the time taken
+import time
+
+start = time.time()
+
 #Python function that checks whether the number is palindrome
 def checkPalindrome(n):
     num = str(n)
@@ -25,4 +30,7 @@ for i in range(100,1000):
             if(largest_palindrome < i * j):
                 largest_palindrome = i * j
 
-print(largest_palindrome)
+time_taken = time.time() - start
+
+print('Largest palindrome made from the product of two 3 digit numbers is : '+str(largest_palindrome))
+print('Time taken in seconds : '+str(time_taken))
